@@ -1,0 +1,405 @@
+@charset "UTF-8";
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+html {
+scroll-behavior: smooth;
+}
+body{
+position: relative;
+overflow-x: hidden;
+margin: 0;
+background-image: url(../);
+}
+#fundo{
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+position: relative; 
+margin: 0 auto;
+
+}
+#fundo::before {
+content: '';
+position: absolute; 
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url("../imagens/wallp.webp");
+background-position: center;
+background-size: cover;
+filter: blur(5px); 
+z-index: -1; 
+}
+nav{
+display: flex;
+flex-direction: row;
+}
+#home{
+background-color: ;
+}
+#logo{
+margin-left: 20px;
+margin-top: 10px;
+}
+ul{
+list-style: none;
+padding: 30px;
+}
+li{
+display: inline-block;
+margin-left: 50px;
+font-size: 28px;
+color: #ffffff;
+font-family: "New Amsterdam", sans-serif;
+cursor: pointer;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+li:hover{
+transform: scale(1.1);
+transition: 0.5s;
+}
+a{
+color: #ffffff;
+text-decoration: none;
+}
+a:hover{
+color: #FFD700;
+}
+#netflix{
+position: absolute;
+top: 0.01%;
+right: 3%;
+}
+#netflix:hover{
+scale: 1.05;
+}
+#cmain{
+display: flex;
+flex-direction: row;
+}
+
+#conteudo1{
+    flex: 1;
+    }
+    #title1{ 
+    color: #ff0000;
+    font-size: 60px;
+    font-family: "New Amsterdam", sans-serif;
+    cursor: default;
+    margin: 50px 0px 0px 130px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    animation: pulse-highlight 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse-highlight {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.01); /* Aumenta o tamanho em 10% */
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    #title1:hover{
+    }
+    h2{
+    color: #ff0000;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 40px;
+    margin-left: 150px;
+    cursor: default;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    h2:hover{
+    }
+    #paragrafo1{
+    color:#000000 ;  
+    padding: 15px; 
+    width: 400px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    cursor: default;
+    text-align: justify;
+    margin: 30px 0px 0px 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    border: 1px solid #4b2e1e;
+    border-radius: 15px;
+    background-color: #f5deb3; 
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 1%, transparent 10%), 
+    radial-gradient(circle, rgba(255, 255, 255, 0.2) 1%, transparent 10%);
+    }
+    #paragrafo1:hover{
+    scale: 1.01;
+    }
+    #conteudo2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    }
+   
+    #img1{
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+    margin:  0px 0px 0px 220px;
+    }
+    #title2{
+    margin: 0px 0px 0px 100px;
+    color: #FFD700;
+    font-size: 20px;
+    font-family: "Concert One", sans-serif;
+    cursor: default;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    #linkf {
+    text-decoration: none;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    #linkf:hover{
+    color: #ffffff;
+    transition: 0.9s;
+    }
+    #trailer{
+    margin-top: 5px;
+    border: 5px solid #4b2e1e;
+    border-radius: 25px;
+    box-shadow: 10px 5px 10px rgba(216, 216, 216, 0.5);
+    }
+main{
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+#navegar{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#navegar{
+overflow: hidden;
+position: relative; 
+}
+#navegar::before {
+content: '';
+position: absolute; 
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url("../imagens/beautiful-clouds-digital-art\ \(1\).jpg ");
+background-position: center;
+background-size: cover;
+filter: blur(10px); 
+z-index: -1; 
+}
+#onepiece{
+ overflow: hidden;
+position: relative;
+margin: 10px 0px 10px 0px;
+padding: 15px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid #4b2e1e;
+border-radius: 15px;
+}
+#onepiece::before {
+content: '';
+position: absolute; 
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url("../imagens/abstract-background-with-dark-sepia-toned-grunge-texture.jpg");
+background-position: center;
+background-size: cover;
+filter: blur(5px); 
+z-index: -1; 
+}
+#onepiece > article > h1{
+padding: 15px;
+font-size: 50px;
+color: #ffd000;
+font-family: "Concert One", sans-serif;
+cursor: default;
+
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 
+4px 4px 8px rgba(0, 0, 0, 0.3); 
+font-weight: bold;
+transform: scale(1.05); 
+transition: transform 0.2s ease-in-out; 
+}
+#onepiece > article > h1:hover{
+transform: scale(1.1);
+}
+#onepiece >  article > p{
+color: #d3bbaa;
+width: 500px;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+padding: 10px; 
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+line-height: 1.6; 
+
+
+}
+#onepiece >.arcos{
+
+
+}
+u{
+
+}
+b{
+color: #000000;
+}
+article{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#obras{
+display: flex;
+flex-direction: row;
+
+}
+#obras{
+overflow: hidden;
+position: relative; 
+}
+#obras::before {
+content: '';
+position: absolute; 
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+background: linear-gradient(180deg, #000000, #006eff);
+background-position: center;
+background-size: cover;
+filter: blur(5px); 
+z-index: -1; 
+}
+#anime {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+   
+    
+}
+#anime > h1{
+color: #a53030;
+    font-size: 35px;
+    font-family: "New Amsterdam", sans-serif;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: #ffffff00;
+    padding: 20px;
+    cursor: default;
+}
+
+
+#cartaz{
+display: flex;
+flex-direction: row;
+gap: 30px ;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 15px 0px;
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.card img{
+    width: 100%;
+    height: 90%;
+    transition: 0.4s ease-in-out;
+}
+.card img:hover{
+    transform: scale(1.03);
+}
+#filmes{
+   
+
+}
+.cartaz2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+#filmes > h1{
+    margin: 30px 0px 0px 20px ;
+    color: #a53030;
+    font-size: 35px;
+    font-family: "New Amsterdam", sans-serif;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: #ffffff00;
+    padding: 20px; 
+    text-align: center;
+    cursor: default;
+}
+
+   
+    
+
+.card > h4{
+    font-size: 20px;
+    color: #4b4b4b;
+    padding: 5px;   
+    font-family: "New Amsterdam", sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.534);
+}
+ h4:hover{
+    cursor: pointer;
+    color: #000000;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.534)
+    ;
+
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+#scrollTopBtn:hover {
+    background-color: #c5c5c5;
+   
+}
+
